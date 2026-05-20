@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Solara AI · Human‑Centered Intelligence</title>
+    <title>Aurion AI · The Insight Engine</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -43,55 +43,56 @@
 
         /* Hero with form */
         .hero { padding: 5rem 0; background: linear-gradient(125deg, var(--peach-bg) 0%, #ffffff 65%); text-align: center; }
-        .hero h1 { font-size: 3.5rem; font-weight: 700; line-height: 1.2; max-width: 800px; margin: 0 auto 1rem; }
+        .hero h1 { font-size: 3.2rem; font-weight: 700; line-height: 1.2; max-width: 800px; margin: 0 auto 1rem; }
         .hero-highlight { color: var(--peach); }
         .hero p { font-size: 1.1rem; color: var(--text-muted); max-width: 600px; margin: 0 auto 2rem; }
         .hero-form { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; max-width: 500px; margin: 0 auto; }
         .hero-form input { padding: 0.8rem 1rem; border-radius: 100px; border: 1px solid var(--border); font-size: 1rem; width: 280px; }
         .hero-form input:focus { outline: none; border-color: var(--peach); }
 
-        /* Vertical cards */
-        .vert-cards { padding: 5rem 0; }
-        .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
-        .vert-card { background: white; border-radius: var(--radius-sm); padding: 2rem; border: 1px solid var(--border); transition: 0.3s; text-align: center; }
-        .vert-card:hover { transform: translateY(-6px); border-color: var(--peach-soft); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.08); }
-        .vert-icon { width: 70px; height: 70px; background: var(--peach-bg); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.2rem; }
-        .vert-icon i { font-size: 2rem; color: var(--peach); }
-        .vert-card h3 { margin-bottom: 0.5rem; }
-        .vert-card p { color: var(--text-muted); font-size: 0.9rem; }
+        /* Big numbers */
+        .big-numbers { padding: 4rem 0; background: white; }
+        .numbers-grid { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; text-align: center; }
+        .number-item h2 { font-size: 2.8rem; font-weight: 800; color: var(--peach); }
+        .number-item p { color: var(--text-muted); font-size: 0.9rem; }
 
-        /* Video preview */
-        .video-preview { padding: 4rem 0; background: var(--peach-bg); }
-        .video-wrapper { max-width: 900px; margin: 0 auto; background: #1e293b; border-radius: var(--radius); padding: 5rem 2rem; text-align: center; cursor: pointer; transition: 0.2s; }
-        .video-wrapper:hover { background: var(--peach-dark); }
-        .video-wrapper i { font-size: 4rem; color: white; margin-bottom: 1rem; display: block; }
-        .video-wrapper p { color: white; font-size: 1.2rem; }
+        /* Features grid with links */
+        .features-links { padding: 5rem 0; background: #f9fafb; }
+        .features-links-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .feature-link-card { background: white; border-radius: var(--radius-sm); padding: 2rem; border: 1px solid var(--border); transition: 0.2s; }
+        .feature-link-card:hover { transform: translateY(-5px); border-color: var(--peach-soft); }
+        .feature-link-card i { font-size: 2rem; color: var(--peach); margin-bottom: 1rem; display: block; }
+        .feature-link-card a { color: var(--peach); text-decoration: none; font-weight: 500; margin-top: 1rem; display: inline-block; }
 
-        /* Partners grid */
-        .partners-grid { padding: 5rem 0; }
-        .logo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 2rem; align-items: center; text-align: center; }
-        .logo-item { background: #f9fafb; padding: 1.5rem; border-radius: var(--radius-sm); border: 1px solid var(--border); font-weight: 500; color: var(--text-muted); transition: 0.2s; }
-        .logo-item:hover { border-color: var(--peach-soft); background: white; }
+        /* Highlight quote */
+        .highlight-quote { padding: 4rem 0; background: var(--peach-bg); text-align: center; }
+        .highlight-quote blockquote { font-size: 1.5rem; font-style: italic; max-width: 700px; margin: 0 auto 1rem; color: #1e293b; }
+        .highlight-quote .author { font-weight: 600; color: var(--peach-dark); }
 
-        /* Blog mixed */
-        .blog-mixed { padding: 5rem 0; background: #f9fafb; }
-        .mixed-grid { display: flex; flex-wrap: wrap; gap: 2rem; }
-        .featured-post { flex: 2; background: white; border-radius: var(--radius); padding: 2rem; border: 1px solid var(--border); }
-        .featured-post .tag { background: var(--peach-bg); color: var(--peach); padding: 0.2rem 0.6rem; border-radius: 100px; font-size: 0.7rem; display: inline-block; margin-bottom: 1rem; }
-        .featured-post h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
-        .post-list { flex: 1; display: flex; flex-direction: column; gap: 1rem; }
-        .list-item { background: white; padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border); transition: 0.2s; }
-        .list-item:hover { border-color: var(--peach-soft); }
-        .list-item .date { font-size: 0.7rem; color: var(--peach); }
+        /* FAQ cards */
+        .faq-cards { padding: 5rem 0; }
+        .faq-cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .faq-card { background: white; border-radius: var(--radius-sm); padding: 1.5rem; border: 1px solid var(--border); cursor: pointer; transition: 0.2s; }
+        .faq-card:hover { border-color: var(--peach-soft); }
+        .faq-question-text { font-weight: 600; display: flex; justify-content: space-between; align-items: center; }
+        .faq-answer-text { margin-top: 1rem; color: var(--text-muted); font-size: 0.9rem; display: none; }
+        .faq-answer-text.show { display: block; }
 
-        /* Pricing simple */
-        .pricing-simple { padding: 5rem 0; }
-        .pricing-flex { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; }
-        .price-box { background: white; border-radius: var(--radius); flex: 1; min-width: 280px; padding: 2rem; border: 1px solid var(--border); text-align: center; transition: 0.2s; }
-        .price-box:hover { transform: translateY(-4px); }
-        .price-box.featured { border-top: 4px solid var(--peach); box-shadow: 0 8px 20px rgba(0,0,0,0.05); }
-        .price-number { font-size: 2.8rem; font-weight: 800; color: var(--peach); margin: 1rem 0; }
-        .price-number span { font-size: 0.9rem; font-weight: 400; color: var(--text-muted); }
+        /* Blog 2 cards */
+        .blog-two { padding: 5rem 0; background: #f9fafb; }
+        .blog-two-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+        .blog-two-card { background: white; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border); transition: 0.2s; }
+        .blog-two-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px -12px rgba(0,0,0,0.1); }
+        .blog-two-img { background: var(--peach-muted); height: 160px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--peach); }
+        .blog-two-content { padding: 1.5rem; }
+        .view-all { text-align: center; margin-top: 2rem; }
+
+        /* Pricing 2 tiers */
+        .pricing-two { padding: 5rem 0; }
+        .pricing-two-grid { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; max-width: 900px; margin: 0 auto; }
+        .pricing-two-card { background: white; border-radius: var(--radius); flex: 1; min-width: 280px; padding: 2rem; border: 1px solid var(--border); text-align: center; transition: 0.2s; }
+        .pricing-two-card.featured { border-top: 4px solid var(--peach); box-shadow: 0 8px 20px rgba(0,0,0,0.05); transform: scale(1.02); }
+        .price-big { font-size: 2.8rem; font-weight: 800; color: var(--peach); margin: 1rem 0; }
 
         /* Privacy */
         .privacy-block { background: white; border-radius: var(--radius-sm); padding: 2rem; margin: 2rem 0; border: 1px solid var(--border); scroll-margin-top: 80px; }
@@ -101,9 +102,10 @@
 
         /* Footer */
         footer { background: #0f172a; color: #94a3b8; padding: 3rem 0 2rem; }
-        .footer-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-bottom: 2rem; }
-        .footer-nav a { color: #94a3b8; text-decoration: none; font-size: 0.85rem; }
-        .footer-nav a:hover { color: var(--peach); }
+        .footer-contact { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem; margin-bottom: 2rem; }
+        .footer-col h4 { color: white; margin-bottom: 1rem; }
+        .footer-col a { color: #94a3b8; text-decoration: none; display: block; margin-bottom: 0.5rem; font-size: 0.85rem; }
+        .footer-col a:hover { color: var(--peach); }
         .back-to-top { position: fixed; bottom: 2rem; right: 2rem; background: var(--peach); color: white; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: 0.2s; z-index: 99; }
         .back-to-top:hover { background: var(--peach-dark); transform: translateY(-3px); }
 
@@ -111,7 +113,6 @@
             .container { padding: 0 20px; }
             .hero h1 { font-size: 2.2rem; }
             .nav-wrapper { flex-direction: column; }
-            .hero-form input { width: 100%; }
         }
     </style>
 </head>
@@ -121,15 +122,15 @@
 
 <nav class="navbar">
     <div class="container nav-wrapper">
-        <div class="logo">Solara<span>AI</span></div>
+        <div class="logo">Aurion<span>AI</span></div>
         <div class="nav-links">
             <a href="#home">Home</a>
-            <a href="#cards">Features</a>
-            <a href="#video">Demo</a>
-            <a href="#blog">Insights</a>
+            <a href="#features">Capabilities</a>
+            <a href="#faq">FAQ</a>
+            <a href="#blog">Stories</a>
             <a href="#pricing">Pricing</a>
             <a href="#privacy">Legal</a>
-            <a href="#" class="btn-primary">Try free →</a>
+            <a href="#" class="btn-primary">Join waitlist →</a>
         </div>
     </div>
 </nav>
@@ -138,8 +139,8 @@
     <!-- Hero with form -->
     <section id="home" class="hero">
         <div class="container">
-            <h1><span class="hero-highlight">Human‑centered</span> AI for modern teams</h1>
-            <p>Solara augments your team's intelligence — not replaces it. Ask questions, get insights, and make better decisions faster.</p>
+            <h1><span class="hero-highlight">Insight</span> at the speed of thought</h1>
+            <p>Aurion turns your team's knowledge into answers — instantly. Ask questions, get citations, and never lose context.</p>
             <div class="hero-form">
                 <input type="email" placeholder="Work email">
                 <a href="#" class="btn-primary">Get early access →</a>
@@ -147,74 +148,70 @@
         </div>
     </section>
 
-    <!-- Vertical cards -->
-    <section id="cards" class="vert-cards">
+    <!-- Big numbers -->
+    <div class="big-numbers">
         <div class="container">
-            <div class="cards-grid">
-                <div class="vert-card"><div class="vert-icon"><i class="fas fa-comment-dots"></i></div><h3>Natural language</h3><p>Ask questions in plain English. No SQL, no dashboards — just answers.</p></div>
-                <div class="vert-card"><div class="vert-icon"><i class="fas fa-link"></i></div><h3>50+ integrations</h3><p>Connect Slack, Salesforce, Snowflake, and more in one click.</p></div>
-                <div class="vert-card"><div class="vert-icon"><i class="fas fa-chart-line"></i></div><h3>Real‑time insights</h3><p>Get answers instantly. No waiting for data teams or batch jobs.</p></div>
-                <div class="vert-card"><div class="vert-icon"><i class="fas fa-shield-alt"></i></div><h3>Enterprise security</h3><p>SOC2, GDPR, HIPAA ready. Your data stays yours.</p></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Video preview -->
-    <section id="video" class="video-preview">
-        <div class="container">
-            <div class="video-wrapper" onclick="alert('Product demo video would play here')">
-                <i class="fas fa-play-circle"></i>
-                <p>Watch how Solara works (2 min demo)</p>
-                <span style="font-size: 0.8rem; opacity: 0.7;">▶ Click to play</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Partners grid -->
-    <div class="partners-grid">
-        <div class="container">
-            <h2 style="font-size: 1.5rem; text-align: center; margin-bottom: 2rem;">Trusted by innovative teams</h2>
-            <div class="logo-grid">
-                <div class="logo-item">Google Cloud</div>
-                <div class="logo-item">AWS</div>
-                <div class="logo-item">Snowflake</div>
-                <div class="logo-item">Salesforce</div>
-                <div class="logo-item">Slack</div>
-                <div class="logo-item">Datadog</div>
+            <div class="numbers-grid">
+                <div class="number-item"><h2>87%</h2><p>faster information retrieval</p></div>
+                <div class="number-item"><h2>2.5M</h2><p>documents indexed</p></div>
+                <div class="number-item"><h2>99.5%</h2><p>answer accuracy</p></div>
             </div>
         </div>
     </div>
 
-    <!-- Blog mixed (featured + list) -->
-    <section id="blog" class="blog-mixed">
+    <!-- Features grid with links -->
+    <section id="features" class="features-links">
         <div class="container">
-            <h2 style="font-size: 2rem; text-align: center; margin-bottom: 2rem;">Latest from Solara</h2>
-            <div class="mixed-grid">
-                <div class="featured-post">
-                    <span class="tag">Featured</span>
-                    <h3>Introducing Solara 2.0: Reasoning engine</h3>
-                    <p>Our biggest update yet — causal inference, persistent memory, and 50+ new integrations.</p>
-                    <div style="margin-top: 1rem; font-size: 0.8rem; color: var(--text-muted);">May 19, 2025 · 8 min read</div>
-                    <a href="#" class="btn-outline" style="margin-top: 1rem; display: inline-block;">Read more →</a>
-                </div>
-                <div class="post-list">
-                    <div class="list-item"><div class="date">May 14, 2025</div><h4>How we reduced query latency by 80%</h4><p style="font-size: 0.8rem; color: var(--text-muted);">Engineering deep‑dive</p></div>
-                    <div class="list-item"><div class="date">May 8, 2025</div><h4>New: Slack integration for instant answers</h4><p style="font-size: 0.8rem; color: var(--text-muted);">Ask Solara directly from channels</p></div>
-                    <div class="list-item"><div class="date">May 2, 2025</div><h4>Solara achieves SOC2 Type II</h4><p style="font-size: 0.8rem; color: var(--text-muted);">Enterprise security, verified</p></div>
-                </div>
+            <div class="features-links-grid">
+                <div class="feature-link-card"><i class="fas fa-search"></i><h3>Semantic search</h3><p>Find documents by meaning, not just keywords. Aurion understands what you're looking for.</p><a href="#">Learn more →</a></div>
+                <div class="feature-link-card"><i class="fas fa-clock"></i><h3>Context memory</h3><p>Remembers previous questions and preferences. Builds on past conversations seamlessly.</p><a href="#">Learn more →</a></div>
+                <div class="feature-link-card"><i class="fas fa-chart-line"></i><h3>Trend detection</h3><p>Identifies patterns across your knowledge base. Discover what your team is discussing most.</p><a href="#">Learn more →</a></div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing simple -->
-    <section id="pricing" class="pricing-simple">
+    <!-- Highlight quote -->
+    <div class="highlight-quote">
         <div class="container">
-            <h2 style="font-size: 2rem; text-align: center; margin-bottom: 1rem;">Simple, transparent pricing</h2>
-            <p style="text-align: center; color: var(--text-muted); margin-bottom: 3rem;">No hidden fees. Cancel anytime.</p>
-            <div class="pricing-flex">
-                <div class="price-box"><h3>Free</h3><div class="price-number">$0<span>/month</span></div><ul style="list-style: none; margin: 1rem 0;"><li style="padding: 0.3rem 0;">✓ 1K queries/month</li><li style="padding: 0.3rem 0;">✓ Basic insights</li><li style="padding: 0.3rem 0;">✓ Community support</li></ul><a href="#" class="btn-outline">Get started</a></div>
-                <div class="price-box featured"><h3>Pro</h3><div class="price-number">$39<span>/month</span></div><ul style="list-style: none; margin: 1rem 0;"><li style="padding: 0.3rem 0;">✓ 50K queries/month</li><li style="padding: 0.3rem 0;">✓ Full reasoning engine</li><li style="padding: 0.3rem 0;">✓ Priority support</li><li style="padding: 0.3rem 0;">✓ API access</li></ul><a href="#" class="btn-primary">Start trial</a></div>
-                <div class="price-box"><h3>Enterprise</h3><div class="price-number">Custom</div><ul style="list-style: none; margin: 1rem 0;"><li style="padding: 0.3rem 0;">✓ Unlimited queries</li><li style="padding: 0.3rem 0;">✓ On‑prem deployment</li><li style="padding: 0.3rem 0;">✓ Dedicated support</li><li style="padding: 0.3rem 0;">✓ SOC2 / HIPAA</li></ul><a href="#" class="btn-outline">Contact sales</a></div>
+            <blockquote>"Aurion found a connection between two projects that our team had completely missed. It saved us months of duplicated work."</blockquote>
+            <p class="author">— Dr. Elena Volkov, Research Director</p>
+        </div>
+    </div>
+
+    <!-- FAQ cards (accordion style) -->
+    <section id="faq" class="faq-cards">
+        <div class="container">
+            <h2 style="font-size: 2rem; text-align: center; margin-bottom: 2rem;">Common questions</h2>
+            <div class="faq-cards-grid">
+                <div class="faq-card" onclick="this.querySelector('.faq-answer-text').classList.toggle('show')"><div class="faq-question-text">How does Aurion protect my data? <i class="fas fa-chevron-down"></i></div><div class="faq-answer-text">Aurion never trains on your documents. All data is encrypted at rest and in transit. We offer SOC2 Type II compliance and on-premise deployment for enterprise customers.</div></div>
+                <div class="faq-card" onclick="this.querySelector('.faq-answer-text').classList.toggle('show')"><div class="faq-question-text">What integrations are available? <i class="fas fa-chevron-down"></i></div><div class="faq-answer-text">Aurion connects to Slack, Notion, Google Drive, Confluence, SharePoint, Salesforce, and 40+ other tools. Custom connectors available for enterprise.</div></div>
+                <div class="faq-card" onclick="this.querySelector('.faq-answer-text').classList.toggle('show')"><div class="faq-question-text">Can I try Aurion for free? <i class="fas fa-chevron-down"></i></div><div class="faq-answer-text">Yes! Our free tier includes 500 queries per month, basic search, and community support. No credit card required.</div></div>
+                <div class="faq-card" onclick="this.querySelector('.faq-answer-text').classList.toggle('show')"><div class="faq-question-text">What's the response time? <i class="fas fa-chevron-down"></i></div><div class="faq-answer-text">Typical response time is under 300ms for most queries. Our infrastructure scales automatically with your usage.</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog 2 cards -->
+    <section id="blog" class="blog-two">
+        <div class="container">
+            <h2 style="font-size: 2rem; text-align: center; margin-bottom: 2rem;">Latest insights</h2>
+            <div class="blog-two-grid">
+                <div class="blog-two-card"><div class="blog-two-img"><i class="fas fa-brain"></i></div><div class="blog-two-content"><div class="blog-date" style="font-size: 0.7rem; color: var(--peach); text-transform: uppercase;">Research</div><h3 style="margin: 0.5rem 0;">Semantic search vs. keyword search</h3><p>Why meaning matters more than matching.</p><div style="margin-top: 1rem; font-size: 0.8rem; color: var(--text-muted);">May 15, 2025 · 6 min read</div></div></div>
+                <div class="blog-two-card"><div class="blog-two-img"><i class="fas fa-building"></i></div><div class="blog-two-content"><div class="blog-date" style="font-size: 0.7rem; color: var(--peach); text-transform: uppercase;">Case Study</div><h3 style="margin: 0.5rem 0;">How a consulting firm saved 400 hours monthly</h3><p>Knowledge retrieval across 10,000+ documents.</p><div style="margin-top: 1rem; font-size: 0.8rem; color: var(--text-muted);">May 8, 2025 · 8 min read</div></div></div>
+            </div>
+            <div class="view-all"><a href="#" class="btn-outline">View all articles →</a></div>
+        </div>
+    </section>
+
+    <!-- Pricing 2 tiers -->
+    <section id="pricing" class="pricing-two">
+        <div class="container">
+            <h2 style="font-size: 2rem; text-align: center; margin-bottom: 1rem;">Simple, fair pricing</h2>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;">No hidden fees. Cancel anytime.</p>
+            <div class="pricing-two-grid">
+                <div class="pricing-two-card"><h3>Free</h3><div class="price-big">$0<span style="font-size: 1rem;">/month</span></div><ul style="list-style: none; margin: 1rem 0;"><li style="padding: 0.3rem 0;">✓ 500 queries/month</li><li style="padding: 0.3rem 0;">✓ Basic search</li><li style="padding: 0.3rem 0;">✓ Community support</li></ul><a href="#" class="btn-outline">Get started</a></div>
+                <div class="pricing-two-card featured"><h3>Pro</h3><div class="price-big">$39<span style="font-size: 1rem;">/month</span></div><ul style="list-style: none; margin: 1rem 0;"><li style="padding: 0.3rem 0;">✓ 10K queries/month</li><li style="padding: 0.3rem 0;">✓ Full memory</li><li style="padding: 0.3rem 0;">✓ Priority support</li><li style="padding: 0.3rem 0;">✓ All connectors</li></ul><a href="#" class="btn-primary">Start trial</a></div>
+                <div class="pricing-two-card"><h3>Enterprise</h3><div class="price-big">Custom</div><ul style="list-style: none; margin: 1rem 0;"><li style="padding: 0.3rem 0;">✓ Unlimited</li><li style="padding: 0.3rem 0;">✓ On‑prem deployment</li><li style="padding: 0.3rem 0;">✓ Dedicated support</li><li style="padding: 0.3rem 0;">✓ SOC2 / HIPAA</li></ul><a href="#" class="btn-outline">Contact sales</a></div>
             </div>
         </div>
     </section>
@@ -223,12 +220,12 @@
     <div class="container" id="privacy">
         <div class="privacy-block">
             <h2><i class="fas fa-shield-alt" style="color: var(--peach);"></i> Privacy Policy</h2>
-            <p><strong>Effective:</strong> May 2025 | Solara AI Inc.</p>
-            <h3>1. Information collection</h3><p>Account data, query logs, and usage patterns. Your business data is never used for training public models.</p>
-            <h3>2. Data usage</h3><p>To provide query services, improve accuracy, process payments, and ensure security. No selling.</p>
-            <h3>3. Your rights</h3><p>Access, correct, delete, export. Email privacy@solara.ai</p>
-            <h3>4. Security</h3><p>AES‑256, TLS 1.3, regular audits.</p>
-            <p><strong>Contact:</strong> dpo@solara.ai | Solara AI, 101 Intelligence Way, San Francisco, CA 94105</p>
+            <p><strong>Effective:</strong> May 2025 | Aurion AI Inc.</p>
+            <h3>1. Information collection</h3><p>Account data, search queries, and usage patterns. Your documents are never used for training public models.</p>
+            <h3>2. Data usage</h3><p>To provide search and discovery services, improve relevance, process payments, and ensure security. No selling.</p>
+            <h3>3. Your rights</h3><p>Access, correct, delete, export. Email privacy@aurion.ai</p>
+            <h3>4. Security</h3><p>AES‑256, TLS 1.3, regular audits. SOC2 Type II certified.</p>
+            <p><strong>Contact:</strong> dpo@aurion.ai | Aurion AI, 101 Discovery Way, San Francisco, CA 94105</p>
         </div>
     </div>
 </main>
@@ -236,16 +233,14 @@
 <!-- Footer -->
 <footer>
     <div class="container">
-        <div class="footer-nav">
-            <a href="#home">Home</a>
-            <a href="#cards">Features</a>
-            <a href="#video">Demo</a>
-            <a href="#blog">Blog</a>
-            <a href="#pricing">Pricing</a>
-            <a href="#privacy">Privacy</a>
-            <a href="#">Terms</a>
+        <div class="footer-contact">
+            <div class="footer-col"><h4>Aurion<span style="color:#f59e0b;">AI</span></h4><p style="font-size: 0.8rem;">The insight engine</p><p style="margin-top: 0.5rem; font-size: 0.7rem;">© 2025</p></div>
+            <div class="footer-col"><h4>Product</h4><a href="#features">Capabilities</a><a href="#pricing">Pricing</a><a href="#">API</a><a href="#">Status</a></div>
+            <div class="footer-col"><h4>Resources</h4><a href="#blog">Blog</a><a href="#">Documentation</a><a href="#">Support</a><a href="#faq">FAQ</a></div>
+            <div class="footer-col"><h4>Company</h4><a href="#">About</a><a href="#">Careers</a><a href="#privacy">Privacy</a><a href="#">Terms</a></div>
+            <div class="footer-col"><h4>Contact</h4><a href="#">hello@aurion.ai</a><a href="#">+1 (415) 555‑0123</a><a href="#">@aurion_ai</a></div>
         </div>
-        <div style="text-align: center; padding-top: 2rem; border-top: 1px solid #334155; font-size: 0.75rem;">© 2025 Solara AI — Human‑centered intelligence</div>
+        <div style="text-align: center; padding-top: 2rem; border-top: 1px solid #334155; font-size: 0.75rem;">Aurion AI — insight at the speed of thought</div>
     </div>
 </footer>
 
